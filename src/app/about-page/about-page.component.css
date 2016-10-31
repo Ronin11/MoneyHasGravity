@@ -1,0 +1,19 @@
+p {
+    font-family: "Roboto";
+    font-size: 1.5em;
+}
+div {
+    padding: 3%;
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1.5em;
+    }
+    md-grid-list{
+        padding-top: 15em;
+    }
+
+}

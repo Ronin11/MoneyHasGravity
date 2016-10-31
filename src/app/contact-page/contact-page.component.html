@@ -1,0 +1,40 @@
+<md-card>
+  <md-grid-list cols="2" rowHeight="4em">
+      <md-grid-tile class="header" [colspan]="2">
+         <h3>
+            Questions or comments? Drop us a line.
+        </h3>
+      </md-grid-tile>  
+      <md-grid-tile [colspan]="1">
+        <md-input placeholder="First Name"></md-input>
+      </md-grid-tile>
+      <md-grid-tile [colspan]="1">
+        <md-input placeholder="Last Name"></md-input>
+      </md-grid-tile>
+
+      <md-grid-tile [colspan]="2">
+        <md-input placeholder="Email Address"></md-input>
+      </md-grid-tile>
+      <md-grid-tile [colspan]="2">
+        <md-input placeholder="Company"></md-input>
+      </md-grid-tile>
+
+      <md-grid-tile [colspan]="2">
+        <md-input placeholder="Subject"></md-input>
+      </md-grid-tile>
+      <md-grid-tile [colspan]="1">
+        Message:
+      </md-grid-tile>
+      <md-grid-tile [colspan]="2" [rowspan]="2">
+        <textarea placeholder="This is an awesome comment box" 
+            rows="20" name="comment[text]" id="comment_text"  
+            cols="40" class="ui-autocomplete-input" autocomplete="off" 
+            role="textbox" aria-autocomplete="list" aria-haspopup="true">
+        </textarea>
+      </md-grid-tile>
+      <md-grid-tile [colspan]="2">
+        <button md-raised-button color="primary" (click)="send()">Submit</button> 
+      </md-grid-tile>
+  </md-grid-list>
+
+</md-card>

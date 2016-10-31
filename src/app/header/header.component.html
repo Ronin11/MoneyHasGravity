@@ -1,0 +1,21 @@
+<md-sidenav #sidenav mode="side" class="app-sidenav">
+  <md-grid-list cols="1" rowHeight="3em">
+    <md-grid-tile></md-grid-tile><md-grid-tile></md-grid-tile>
+    <md-grid-tile><a routerLink="/home" routerLinkActive="active" (click)="sidenav.close()" md-raised-button color="primary">Home</a></md-grid-tile>
+    <md-grid-tile><a routerLink="/about" routerLinkActive="active" (click)="sidenav.close()" md-raised-button color="primary">About</a></md-grid-tile>
+    <md-grid-tile><a routerLink="/services" routerLinkActive="active" (click)="sidenav.close()" md-raised-button color="primary">Services</a></md-grid-tile>
+    <md-grid-tile><a routerLink="/contact" routerLinkActive="active" (click)="sidenav.close()" md-raised-button color="primary">Contact</a></md-grid-tile>
+    <md-grid-tile><a routerLink="/works" routerLinkActive="active" (click)="sidenav.close()" md-raised-button color="primary">Works</a></md-grid-tile>
+  </md-grid-list>
+</md-sidenav>
+<nav class="nav-bar">
+  <md-toolbar color="primary">
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+      <md-icon svgSrc="/assets/menu.svg"></md-icon>
+    </button>
+    <span class="app-toolbar-filler"></span>
+    Radd Development
+  </md-toolbar>
+</nav>
+
+

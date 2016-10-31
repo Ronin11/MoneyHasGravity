@@ -1,0 +1,35 @@
+.servicespage{
+    margin-top: 6em;
+}
+md-card{
+    padding: 1em;
+    margin: 1em;
+}
+/*md-grid-tile{
+    font-size: 2em;
+    font-size: 3vmin;
+}*/
+md-list{
+    padding-top: 1em;
+}
+
+p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+@media screen and (max-width: 480px) {
+    /*md-grid-tile{
+        font-size: 3em;
+        font-size: 4vmin;
+    }*/
+    md-card{
+        padding: none;
+        margin: none;
+    }
+    p{
+        padding-bottom: 4em;
+        padding-top: 4em;
+    }
+}
